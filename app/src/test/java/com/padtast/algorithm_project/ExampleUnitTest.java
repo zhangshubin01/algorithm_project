@@ -12,6 +12,19 @@ import static org.junit.Assert.*;
 public class ExampleUnitTest {
     @Test
     public void addition_isCorrect() {
-        assertEquals(4, 2 + 2);
+        int a[] = {1, 2, 3, 56, 45, 22, 22, 26, 89, 99, 100};
+
+        System.out.println("排序前：");
+        for (int i = 0; i < a.length; ++ i){
+            System.out.print(a[i] + " ");
+        }
+
+        SelectSort.selectSorts(a);
+
+        System.out.println("\n");
+        System.out.println("排序后：");
+        for (int i = 0; i < a.length; ++ i){
+            System.out.print(a[i] + " ");
+        }
     }
 }
