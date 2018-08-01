@@ -2,6 +2,8 @@ package com.padtast.algorithm_project;
 
 import org.junit.Test;
 
+import java.util.Scanner;
+
 import static org.junit.Assert.*;
 
 /**
@@ -19,12 +21,29 @@ public class ExampleUnitTest {
             System.out.print(a[i] + " ");
         }
 
-        SelectSort.selectSorts(a);
+        BubbleSort.bubbleSort(a);
 
         System.out.println("\n");
         System.out.println("排序后：");
         for (int i = 0; i < a.length; ++ i){
             System.out.print(a[i] + " ");
         }
+    }
+    @Test
+    public void addition_isCorrects() {
+        int a[] = {2, 4, 7, 18, 25, 34, 56, 68, 89};
+        System.out.println("打印原始数据：");
+        for (int i = 0; i < a.length; ++ i){
+            System.out.print(a[i] + " ");
+        }
+
+
+        int pos = 0;
+        pos = binaryFind.binaryFind(a, 5);
+        if (-1 != pos)
+            System.out.println("所查整数在数组中的位置下标是：" + pos);
+        else
+            System.out.println("没找到待查数据!");
+
     }
 }
