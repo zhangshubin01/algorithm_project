@@ -46,4 +46,10 @@ public class ExampleUnitTest {
             System.out.println("没找到待查数据!");
 
     }
+    @Test
+    public void addition_issCorrects() {
+        System.out.println(ArrayClass.compare(2,2.00));
+
+
+    }
 }
