@@ -52,4 +52,13 @@ public class ExampleUnitTest {
 
 
     }
+    @Test
+    public void MaxIMum(){
+        int[] a = {40,-1,-2, -1, -4, -3, 2, -5, -3, -9};
+        System.out.println("第一种暴力方法：" + MaximumSubsequenceAndProblem.maxSubSum1(a));
+        System.out.println("第二种暴力改进方法：" + MaximumSubsequenceAndProblem.maxSubSum2(a));
+        System.out.println("第三种分治策略方法：" + MaximumSubsequenceAndProblem.maxSubSum3(a));
+        System.out.println("第四种线性方法：" + MaximumSubsequenceAndProblem.maxSubSum4(a));
+        System.out.println("第五种动态规划方法：" + MaximumSubsequenceAndProblem.maxSubSum5(a));
+    }
 }
